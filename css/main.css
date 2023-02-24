@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--body-bg);
+}
+:root{
+    --body-bg: #F2F2F2;
+    --primary-color: #4B6A9B;
+    --secondary-color:  #2B3442;
+    --addit-color: #697C9A;
+    --mini-bg-color: #F6F8F;
+    --bg-color: #FEFEFE;
+}
+.dark{
+    --primary-color: white;
+    --secondary-color: #FFF;
+    --addit-color: white;
+    --bg-color: #1E2A47;
+    --body-bg: #141D2FFF;
+    --mini-bg-color: #141D2F;
+    transition: .2s;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.container{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+.d-flex{
+    display: flex;
+}
+.fdc{
+    flex-direction: column;
+}
+.aic{
+    align-items: center;
+}
+.jcc{
+    justify-content: center;
+}
+.aif{
+    align-items: flex-start;
+}
+.jcb{
+    justify-content: space-between;
+}
+a{text-decoration: none;display: inline-block;}
+/* header */
+.header{
+    margin-bottom: 25px;
+}
+.header .modes{
+    margin-bottom: 35px;
+}
+.mode_title{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    transition: all .2s;
+    color: var(--secondary-color);
+}
+#icon{
+    cursor: pointer;
+}
+.search_input{
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    transition: all .2s;
+    background: var(--bg-color);
+    padding: 9.5px 10px 9.5px 30px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+.search_input #search{
+    width: 100%;
+    height: 100%;
+    margin: 0 5px 0 15px;
+    border-radius: 10px;
+    padding-left: 23px;
+}
+.search_input input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s;
+    color: var(--primary-color);
+    background-color: transparent;
+}
+.search_input #submit{
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #0079FF;
+    border-radius: 10px;
+}
+.search_input #submit:hover{
+    background: #60ABFF;
+}
+/* header */
+
+/* main */
+.main .container{
+    max-width: 730px;
+    border-radius: 15px;
+    padding: 44px 48px 48px;
+    transition: all .2s;
+    background: var(--bg-color);
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+.top{
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.name{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    margin-bottom: 2px;
+    transition: all .2s;
+    color: var(--secondary-color);
+}
+.info{
+    width: 100%;
+    padding: 0 20px;
+}
+.name_top{
+    width: 100%;
+    max-width: 700px;
+}
+.email{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    transition: all .2s;
+    text-decoration: none;
+    color: #0079FF;
+}
+.bio{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+    transition: all .2s;
+    color: var(--primary-color);
+}
+.date{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: auto;
+    transition: all .2s;
+    color: var(--addit-color);
+}
+.inform{
+    width: 75.5%;
+    margin-left: auto;
+}
+.follow{
+    width: 100%;
+    max-width: 480px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    transition: all .2s;
+    padding: 15px 0 17px 32px;
+    background: var(--mini-bg-color);
+}
+.item:nth-child(2){
+    margin: 0 80px;
+}
+.subtitle{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    transition: all .2s;
+    color: var(--primary-color);
+}
+.number{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    transition: all .2s;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+ul li{
+    list-style: none;
+}
+.link_name a{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    transition: all .2s;
+    color: var(--primary-color);
+}
+.links > div{
+    gap: 18px;
+}
+.link{
+    gap: 15px;
+}
+.links{
+    gap: 60px;
+}
+.link_icon svg path{
+    transition: all .2s;
+    fill: var(--primary-color);
+}
+#bio{
+    display: none;
+}
+/* main */
